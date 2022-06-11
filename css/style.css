@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: white;
+}
+
+#clock{
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 100px 0;
+    font-weight: 700px;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-size: 0.8em;
+}
+
+#clock h2{
+    font-size: 4em;
+    margin-bottom: 0.9em;
+    letter-spacing: 0.3em;
+}
+
+#clock #time{
+    display:flex;
+}
+
+#clock #time div{
+    position: relative;
+    margin: 0 5px;
+}
+
+#clock #time div span{
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    background:black;
+    color:white;
+    font-weight: 300;
+    align-items: center;
+    justify-content: center;
+    font-size: 8em;
+    display:flex;
+    z-index: 10;  
+    box-shadow: 0 0 0 1px rgba(0, 0, 0,.2);
+} 
+
+#clock #time div span:nth-child(2){
+    height: 30px;
+    font-size: 0.7em;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    box-shadow: none;
+    background: #333333;
+    text-transform: uppercase;
+    z-index: 9;
+}
+
+#registry{
+    height: 100px;
+    width: 300px;
+    background-color: black;
+    border-radius: 5px;
+    margin: 0 auto 0 auto; 
+    margin-top:20px
+}
+
+#boxRegistry input[type='text'], input[type='submit']{
+    margin-top: 20px;
+}
+
+#boxRegistry input[type='text']{
+    text-align:center;
+    border-radius: 5px;   
+}
+
+#boxRegistry input[type='submit']{
+    width: 150px;
+    border-radius:5px;
+    cursor:pointer;
+}
